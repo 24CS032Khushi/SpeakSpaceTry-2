@@ -27,6 +27,20 @@ Most voice applications stop at **transcription or summarization** and do not co
 It demonstrates **voice → intent → execution**, not just voice → text.
 
 ---
+## 🧠 Task Planning Logic (Important Explanation)
+
+- Tasks are stored persistently in `db.json`
+- The task plan is **generated dynamically** every time an API call is made
+- The plan includes:
+  - Previously stored tasks
+  - Newly created tasks
+- This allows the system to maintain task history and continuity
+
+> Note: For demo purposes, clearing the database resets the task plan.
+
+This behavior reflects real-world task management systems.
+
+---
 
 ## 🔄 How It Works
 

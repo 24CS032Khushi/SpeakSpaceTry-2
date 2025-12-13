@@ -1,34 +1,54 @@
 {
   "tasks": [
     {
-      "id": "cacfbd49-fd1c-4c6b-ac14-ec3241857232",
-      "text": "submit my assignment by next Wednesday",
-      "raw": "Remind me to submit my assignment by next Wednesday",
-      "dueDate": "2025-12-10T06:30:00.000Z",
-      "priority": "medium",
-      "category": "work",
-      "status": "pending",
-      "createdAt": "2025-12-12T15:18:44.797Z"
-    },
-    {
-      "id": "07f66f3c-99d9-4c39-b16f-8574f9726bf3",
-      "text": "email my professor tomorrow morning",
-      "raw": "email my professor tomorrow morning",
-      "dueDate": "2025-12-02T00:30:00.000Z",
-      "priority": "medium",
-      "category": "work",
-      "status": "pending",
-      "createdAt": "2025-12-12T15:18:44.797Z"
-    },
-    {
-      "id": "2ce0a315-5bee-4efc-af08-e0ab904ca660",
-      "text": "study OS on Friday evening",
-      "raw": "study OS on Friday evening",
-      "dueDate": "2025-11-28T14:30:00.000Z",
+      "id": "74796cfb-0246-4246-99be-a90c3d67722d",
+      "text": "Prepare slides for the client presentation by Thursday",
+      "raw": "Prepare slides for the client presentation by Thursday",
+      "dueDate": "2025-12-04T06:30:00.000Z",
       "priority": "medium",
       "category": "study",
       "status": "pending",
-      "createdAt": "2025-12-12T15:18:44.797Z"
+      "createdAt": "2025-12-13T16:08:19.156Z"
+    },
+    {
+      "id": "d905ee69-5ae8-432a-95ce-74238dc8c0bf",
+      "text": "follow up with the design team tomorrow.",
+      "raw": "follow up with the design team tomorrow.",
+      "dueDate": "2025-12-05T14:30:00.000Z",
+      "priority": "medium",
+      "category": "general",
+      "status": "pending",
+      "createdAt": "2025-12-13T16:08:19.156Z"
+    },
+    {
+      "id": "1dccb2eb-69e4-468b-969d-c23faac1aada",
+      "text": "submit my assignment by Monday",
+      "raw": "Remind me to submit my assignment by Monday",
+      "dueDate": "2025-12-01T06:30:00.000Z",
+      "priority": "medium",
+      "category": "work",
+      "status": "pending",
+      "createdAt": "2025-12-13T10:10:27.532Z"
+    },
+    {
+      "id": "90a1b4f8-ef4a-4665-b24e-cb41be1245b2",
+      "text": "email my professor tomorrow.",
+      "raw": "email my professor tomorrow.",
+      "dueDate": "2025-12-02T10:00:00.000Z",
+      "priority": "medium",
+      "category": "work",
+      "status": "pending",
+      "createdAt": "2025-12-13T10:10:27.532Z"
+    },
+    {
+      "id": "524e2cd3-1c4c-4776-a11f-96e6b10f558b",
+      "text": "revise OS this weekend.",
+      "raw": "revise OS this weekend.",
+      "dueDate": "2025-12-06T06:30:00.000Z",
+      "priority": "medium",
+      "category": "study",
+      "status": "pending",
+      "createdAt": "2025-12-13T10:10:27.532Z"
     }
   ]
 }

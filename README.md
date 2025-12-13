@@ -1,41 +1,63 @@
-# SpeakTasks — Voice → Task Manager (SpeakSpace custom action)
+# 🗣️ SpeakTasks — Voice-Driven Task Automation Workflow
 
-## What it is
-Converts SpeakSpace voice notes into structured tasks with due dates, priority, and category (study/work/personal). Saves tasks to a JSON DB and exposes endpoints to view tasks and generate plans.
+> **One-line description:**  
+> SpeakTasks converts voice notes into structured, prioritized, and actionable tasks using intelligent backend workflows — turning **voice into execution**, not just transcription.
 
-## Quick start (local)
-1. Clone repo
-2. `npm install`
-3. Create `.env` with:
-  API_KEY=you_key
-  PORT=3000
-4. `node index.js`
-5. Test:
-- GET `http://localhost:3000/`
-- POST `http://localhost:3000/api/process` with header `x-api-key: mysupersecretkey`
+---
 
-## Deployment
-Recommended: Railway (instructions in repo)
-1. Push to GitHub
-2. Create Railway project and link repo
-3. Add env var `API_KEY`
-4. Deploy
+## 🧩 Problem Statement
 
-## Endpoints
-- `POST /api/process` — main SpeakSpace workflow
-- `GET /api/tasks` — list tasks
-- `GET /api/plan?days=2` — plan for next N days
-- `GET /api/plan?date=YYYY-MM-DD` — tasks due that date
+Voice notes are fast to record but difficult to act upon.
 
-## SpeakSpace Action config
-- Title: `Create Tasks (SpeakTasks)`
-- Prompt Template: `Convert the following note into actionable tasks... $PROMPT`
-- API URL: `https://<your-domain>/api/process`
-- Header: `x-api-key: mysupersecretkey`
+Users often record reminders, instructions, and ideas as voice notes, but must later **re-listen, interpret, and manually convert** them into tasks. This leads to:
+- Missed deadlines  
+- Unclear priorities  
+- Low productivity  
 
-## Notes for judges
-- The service stores tasks in a simple JSON DB (`db.json`). For production, swap to a persistent DB or Notion integration.
-- Add advanced integrations (calendar, Notion) as optional enhancements.
+Most voice applications stop at **transcription or summarization**.  
+They fail to understand **intent**, **urgency**, and **execution logic**.
 
-## Author
-Team: Khushi Ka.Patel, Jainam Khetani
+---
+
+## 💡 Our Solution
+
+**SpeakTasks** is a custom **SpeakSpace Action** that automatically converts spoken intent into:
+
+- 📌 Structured tasks  
+- ⏰ Detected deadlines & time references  
+- 🚦 Priority levels (High / Medium / Low)  
+- 🗂️ Task categories (Study / Work / Personal)  
+- 🧠 Explainable decisions (why a task was created)  
+- 🗓️ A short-term actionable plan  
+
+It demonstrates **voice → intent → execution**, not just voice → text.
+
+---
+
+## 🔄 How It Works
+
+1. User records a voice note in **SpeakSpace**
+2. SpeakSpace converts speech → text
+3. Text is sent to our backend API
+4. Backend extracts intent, deadlines, priority & category
+5. Tasks are stored and a plan is generated dynamically
+
+---
+
+## 🛠️ Tech Stack
+
+- **Backend:** Node.js, Express  
+- **NLP Logic:** Custom heuristics + `chrono-node`  
+- **Storage:** JSON-based database (`db.json`)  
+- **Hosting:** Railway  
+- **Security:** API Key authentication  
+- **Integration:** SpeakSpace Custom Actions  
+
+---
+
+## 🚀 Quick Start (Local Setup)
+
+### 1️⃣ Clone the repository
+```bash
+git clone <your-repo-url>
+cd speaktasks

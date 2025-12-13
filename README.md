@@ -59,5 +59,24 @@ It demonstrates **voice → intent → execution**, not just voice → text.
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone <your-repo-url>
-cd speaktasks
+git clone https://github.com/24CS032Khushi/SpeakSpaceTry-2.git
+cd SpeakSpaceTry-2
+```
+### 2️⃣ Install dependencies
+```bash
+npm install
+```
+### 3️⃣ Create environment variables
+- **Create a .env file in the root directory:**
+```bash
+API_KEY=test123
+PORT=3000
+```
+### 4️⃣ Run the server
+```bash
+node index.js
+```
+### 5️⃣ Test locally
+- **GET** → http://localhost:3000/
+- **POST** → http://localhost:3000/api/process
+---

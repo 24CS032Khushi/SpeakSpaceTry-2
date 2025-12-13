@@ -4,18 +4,12 @@
 > SpeakTasks converts voice notes into structured, prioritized, and actionable tasks using intelligent backend workflows — turning **voice into execution**, not just transcription.
 
 ---
-
 ## 🧩 Problem Statement
 
-Voice notes are fast to record but difficult to act upon.
+Voice notes are quick to record but difficult to act upon.  
+Users often need to manually re-listen, interpret, and rewrite spoken instructions into task lists, which leads to missed deadlines and poor organization.
 
-Users often record reminders, instructions, and ideas as voice notes, but must later **re-listen, interpret, and manually convert** them into tasks. This leads to:
-- Missed deadlines  
-- Unclear priorities  
-- Low productivity  
-
-Most voice applications stop at **transcription or summarization**.  
-They fail to understand **intent**, **urgency**, and **execution logic**.
+Most voice applications stop at **transcription or summarization** and do not convert voice into **actionable workflows**.
 
 ---
 
